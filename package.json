@@ -1,17 +1,16 @@
 {
   "name": "chatbot-music-webhook",
   "version": "1.0.0",
+  "description": "Dialogflow webhook for music suggestions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "axios": "^1.9.0",
-    "dialogflow-fulfillment": "^0.5.0",
-    "express": "^5.1.0"
-  }
+    "dialogflow-fulfillment": "^0.6.1",
+    "axios": "^1.6.8",
+    "express": "^4.19.2"
+  },
+  "author": "",
+  "license": "ISC"
 }
