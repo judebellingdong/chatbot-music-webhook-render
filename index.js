@@ -67,8 +67,8 @@ app.post('/webhook', (request, response) => {
                 const videoUrl = `https://www.youtube.com/watch?v=${videoId}`; // URL đầy đủ đến video YouTube
 
                 // Thêm phản hồi văn bản và rich response cho Dialogflow
-                agent.add(`<span class="math-inline">\{botInitialResponse\} "</span>{videoTitle}".`); // Giữ nguyên thông báo ban đầu
-                agent.add(`Link video: ${videoUrl}`); // Thêm tiền tố "Link video:" cho rõ ràng
+                agent.add(`<span class="math-inline">\{botInitialResponse\} "</span>{videoTitle}". Link video: ${videoUrl}`);
+// Giữ nguyên khối agent.add(new Payload(agent.ACTIONS_ON_GOOGLE, {...})); bên dưới
 
                 // Thêm Rich Response (Basic Card) cho các nền tảng hỗ trợ (ví dụ: Google Assistant)
                 agent.add(new Payload(agent.ACTIONS_ON_GOOGLE, {
