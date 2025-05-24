@@ -20,7 +20,7 @@ console.log("Using YouTube API Key (first 5 chars):", YOUTUBE_API_KEY ? YOUTUBE_
 // Dialogflow sẽ gửi yêu cầu POST đến /webhook
 app.post('/webhook', (request, response) => {
     // Tạo một đối tượng WebhookClient để dễ dàng làm việc với Dialogflow
-    const agent = new new WebhookClient({ request, response });
+    const agent = new WebhookClient({ request, response });
 
     // (Tùy chọn) Ghi log request từ Dialogflow để dễ gỡ lỗi
     console.log('Dialogflow Request headers: ' + JSON.stringify(request.headers));
